@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Baking Recipe Generator</h1>
+        <form id="recipe-form">
+            <label for="ingredient">Main Ingredient:</label>
+            <input type="text" id="ingredient" name="ingredient" required>
+
+            <label for="type">Type of Baked Good:</label>
+            <select id="type" name="type">
+                <option value="cake">Cake</option>
+                <option value="cookies">Cookies</option>
+                <option value="bread">Bread</option>
+                <option value="muffins">Muffins</option>
+            </select>
+
+            <button type="submit">Get Recipe</button>
+        </form>
+        <div id="recipe-results"></div>
+    </div>
+
+    <script src="generator.js"></script>
+</body>
+
+</html>
